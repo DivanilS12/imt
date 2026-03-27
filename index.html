@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="user">
+       <span>Usuário</span>
+    </div>
+
+    <nav>
+      <button class="active"> Página inicial</button>
+      <button> Análise de currículo</button>
+      <button> Modo IA</button>
+      <button> Fórum</button>
+    </nav>
+
+    <div class="bottom">
+      <button> Configurações</button>
+      <button> Sair</button>
+    </div>
+  </aside>
+
+  <!-- CONTEÚDO -->
+  <main class="content">
+
+    <header class="top">
+      <h1>Profissões</h1>
+      <input type="text" id="search" placeholder="Pesquisar...">
+    </header>
+
+    <div id="lista-profissoes"></div>
+
+  </main>
+
+</div>
+
+<script src="assets/js/pages/home.js"></script>
+</body>
+</html>

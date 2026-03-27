@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 230px;
+  height: 100vh;
+  background: #0d0b1f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sidebar .active {
+  background: white;
+  color: purple;
+}
+
+/* CONTENT */
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#search {
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+/* CARDS */
+.card {
+  margin-top: 15px;
+  padding: 15px 20px;
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  height: 60px; /* compacto */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* TÍTULO */
+.card-title {
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* EXPANSÃO SUAVE */
+.card:hover {
+  height: 170px;
+}
+
+/* INFO ESCONDIDA */
+.info {
+  opacity: 0;
+  margin-top: 10px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.card:hover .info {
+  opacity: 1;
+}
+
+/* CORES */
+.ds { background: linear-gradient(90deg, purple, magenta); }
+.fisio { background: orange; }
+.medico { background: darkred; }
+.prof { background: blue; }
+.jard { background: limegreen; }
+
+/* GRAFICO FAKE */
+.chart {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(
+    blue 70%,
+    pink 30%
+  );
+  margin-top: 10px;
+}

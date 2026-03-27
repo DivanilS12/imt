@@ -1,0 +1,37 @@
+[
+  {
+    "nome": "Técnico de Desenvolvimento de Sistemas",
+    "classe": "ds",
+    "salario": "R$ 3.500 - R$ 8.000",
+    "genero": "70% homens",
+    "grafico": "70"
+  },
+  {
+    "nome": "Fisioterapeuta",
+    "classe": "fisio",
+    "salario": "R$ 2.500 - R$ 6.000",
+    "genero": "65% mulheres",
+    "grafico": "35"
+  },
+  {
+    "nome": "Médico",
+    "classe": "medico",
+    "salario": "R$ 8.000 - R$ 25.000",
+    "genero": "50% / 50%",
+    "grafico": "50"
+  },
+  {
+    "nome": "Professor",
+    "classe": "prof",
+    "salario": "R$ 2.000 - R$ 5.000",
+    "genero": "70% mulheres",
+    "grafico": "30"
+  },
+  {
+    "nome": "Jardineiro",
+    "classe": "jard",
+    "salario": "R$ 1.500 - R$ 3.000",
+    "genero": "80% homens",
+    "grafico": "80"
+  }
+]
