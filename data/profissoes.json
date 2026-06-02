@@ -1,37 +1,67 @@
 [
   {
+    "id": "desenvolvimento-sistemas",
     "nome": "Técnico de Desenvolvimento de Sistemas",
     "classe": "ds",
+    "area": "Tecnologia",
+    "descricao": "Cria, mantém e integra aplicações web, mobile e sistemas internos.",
     "salario": "R$ 3.500 - R$ 8.000",
-    "genero": "70% homens",
-    "grafico": "70"
+    "salarioMedio": 5750,
+    "genero": "70% homens / 30% mulheres",
+    "grafico": 86,
+    "habilidades": ["Lógica", "JavaScript", "Banco de dados"],
+    "cursos": ["ADS", "Ciência da Computação", "Desenvolvimento Web"]
   },
   {
+    "id": "fisioterapeuta",
     "nome": "Fisioterapeuta",
     "classe": "fisio",
+    "area": "Saúde",
+    "descricao": "Atua na recuperação, prevenção e melhora da mobilidade corporal.",
     "salario": "R$ 2.500 - R$ 6.000",
-    "genero": "65% mulheres",
-    "grafico": "35"
+    "salarioMedio": 4250,
+    "genero": "35% homens / 65% mulheres",
+    "grafico": 72,
+    "habilidades": ["Anatomia", "Comunicação", "Reabilitação"],
+    "cursos": ["Fisioterapia", "Biomecânica", "Ortopedia"]
   },
   {
+    "id": "medico",
     "nome": "Médico",
     "classe": "medico",
+    "area": "Saúde",
+    "descricao": "Diagnostica, previne e trata doenças em diferentes especialidades.",
     "salario": "R$ 8.000 - R$ 25.000",
-    "genero": "50% / 50%",
-    "grafico": "50"
+    "salarioMedio": 16500,
+    "genero": "50% homens / 50% mulheres",
+    "grafico": 91,
+    "habilidades": ["Diagnóstico", "Ética", "Tomada de decisão"],
+    "cursos": ["Medicina", "Residência médica", "Saúde pública"]
   },
   {
+    "id": "professor",
     "nome": "Professor",
     "classe": "prof",
+    "area": "Educação",
+    "descricao": "Planeja aulas, acompanha aprendizagem e desenvolve pessoas.",
     "salario": "R$ 2.000 - R$ 5.000",
-    "genero": "70% mulheres",
-    "grafico": "30"
+    "salarioMedio": 3500,
+    "genero": "30% homens / 70% mulheres",
+    "grafico": 68,
+    "habilidades": ["Didática", "Comunicação", "Planejamento"],
+    "cursos": ["Pedagogia", "Licenciaturas", "Psicopedagogia"]
   },
   {
+    "id": "jardineiro",
     "nome": "Jardineiro",
     "classe": "jard",
+    "area": "Serviços",
+    "descricao": "Cuida de jardins, paisagismo, plantas ornamentais e manutenção verde.",
     "salario": "R$ 1.500 - R$ 3.000",
-    "genero": "80% homens",
-    "grafico": "80"
+    "salarioMedio": 2250,
+    "genero": "80% homens / 20% mulheres",
+    "grafico": 61,
+    "habilidades": ["Paisagismo", "Manutenção", "Botânica básica"],
+    "cursos": ["Jardinagem", "Paisagismo", "Irrigação"]
   }
 ]

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMT | IA</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="../index.html"><span class="brand-mark">IMT</span><span><strong>Intelligent Market Tracker</strong><small>Orientação de carreira</small></span></a>
+      <div class="user-actions"><a class="btn btn-outline" href="../login.html">Login</a><a class="btn btn-primary" href="../register.html">Cadastro</a></div>
+      <nav class="nav-menu"><a class="nav-link" href="../index.html">Página inicial</a><a class="nav-link" href="analisador.html">Análise de currículo</a><a class="nav-link" href="ia.html">Modo IA</a><a class="nav-link" href="forum.html">Fórum</a><a class="nav-link" href="perfil.html">Perfil</a><a class="nav-link" href="salvas.html">Salvas</a></nav>
+      <div class="sidebar-footer"><button class="nav-link as-button" type="button" data-action="theme">Tema</button><button class="nav-link as-button" type="button" data-action="logout" data-redirect="../index.html">Sair</button></div>
+    </aside>
+    <main class="content">
+      <header class="topbar"><div><p class="eyebrow">Assistente</p><h1>Modo IA</h1></div></header>
+      <section class="page-grid">
+        <div class="page-card">
+          <h2>Converse sobre carreira</h2>
+          <form class="form-stack" id="ia-form">
+            <label>Mensagem<textarea id="ia-message" required placeholder="Ex: Gosto de tecnologia e criatividade. Que profissões combinam comigo?"></textarea></label>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </form>
+        </div>
+        <div class="page-card">
+          <h2>Resposta</h2>
+          <p id="ia-response">Faça uma pergunta para receber uma orientação inicial.</p>
+          <button class="btn btn-muted" id="clear-history" type="button">Limpar histórico</button>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/pages/ia_page.js"></script>
+</body>
+</html>

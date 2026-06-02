@@ -2,49 +2,80 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>IMT</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMT | Profissões</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/home.css">
 </head>
-<body>
+<body data-page="home">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html" aria-label="Página inicial do IMT">
+        <span class="brand-mark">IMT</span>
+        <span>
+          <strong>Intelligent Market Tracker</strong>
+          <small>Orientação de carreira</small>
+        </span>
+      </a>
 
-<div class="container">
+      <div class="user-actions">
+        <a class="btn btn-outline" href="login.html">Login</a>
+        <a class="btn btn-primary" href="register.html">Cadastro</a>
+      </div>
 
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
-    <div class="user">
-       <button class="login-btn"><span>login</span></button>
-       <button class="register-btn"><span>cadastro</span></button>
-    </div>
+      <nav class="nav-menu" aria-label="Navegação principal">
+        <a class="nav-link active" href="index.html">Página inicial</a>
+        <a class="nav-link" href="pages/analisador.html">Análise de currículo</a>
+        <a class="nav-link" href="pages/ia.html">Modo IA</a>
+        <a class="nav-link" href="pages/forum.html">Fórum</a>
+        <a class="nav-link" href="pages/perfil.html">Perfil</a>
+        <a class="nav-link" href="pages/salvas.html">Salvas</a>
+      </nav>
 
-    <nav>
-      <button class="active"><span>Página inicial</span></button>
-      <button ><span>Análise de currículo</span> </button>
-      <button><span>Modo IA</span> </button>
-      <button><span>Fórum</span> </button>
-    </nav>
+      <div class="sidebar-footer">
+        <button class="nav-link as-button" type="button" data-action="theme">Tema</button>
+        <button class="nav-link as-button" type="button" data-action="logout">Sair</button>
+      </div>
+    </aside>
 
-    <div class="bottom">
-      <button><span>Configurações</span> </button>
-      <button><span> Sair</span></button>
-    </div>
-  </aside>
+    <main class="content">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Mapa de carreiras</p>
+          <h1>Profissões</h1>
+        </div>
+        <label class="search-box">
+          <span>Pesquisar</span>
+          <input type="search" id="search" placeholder="Nome, área ou habilidade">
+        </label>
+      </header>
 
-  <!-- CONTEÚDO -->
-  <main class="content">
+      <section class="hero-panel">
+        <div>
+          <p class="eyebrow">Escolha com dados</p>
+          <h2>Compare mercado, habilidades e empregabilidade antes de decidir.</h2>
+        </div>
+        <div class="hero-stats" aria-label="Resumo de indicadores">
+          <span><strong id="total-profissoes">0</strong> profissões</span>
+          <span><strong>IA</strong> pronta</span>
+          <span><strong>PDF</strong> currículo</span>
+        </div>
+      </section>
 
-    <header class="top">
-      <h1>Profissões</h1>
-      <input type="text" id="search" placeholder="Pesquisar...">
-    </header>
+      <section class="toolbar" aria-label="Filtros de profissão">
+        <button class="chip active" type="button" data-filter="todas">Todas</button>
+        <button class="chip" type="button" data-filter="Tecnologia">Tecnologia</button>
+        <button class="chip" type="button" data-filter="Saúde">Saúde</button>
+        <button class="chip" type="button" data-filter="Educação">Educação</button>
+        <button class="chip" type="button" data-filter="Serviços">Serviços</button>
+      </section>
 
-    <div id="lista-profissoes"></div>
+      <section id="lista-profissoes" class="profession-grid" aria-live="polite"></section>
+      <p id="empty-state" class="empty-state" hidden>Nenhuma profissão encontrada.</p>
+    </main>
+  </div>
 
-  </main>
-
-</div>
-
-<script src="assets/js/pages/home.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/pages/home.js"></script>
 </body>
 </html>

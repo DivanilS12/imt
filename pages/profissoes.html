@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMT | Profissões</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/home.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="../index.html"><span class="brand-mark">IMT</span><span><strong>Intelligent Market Tracker</strong><small>Orientação de carreira</small></span></a>
+      <div class="user-actions"><a class="btn btn-outline" href="../login.html">Login</a><a class="btn btn-primary" href="../register.html">Cadastro</a></div>
+      <nav class="nav-menu">
+        <a class="nav-link" href="../index.html">Página inicial</a>
+        <a class="nav-link" href="analisador.html">Análise de currículo</a>
+        <a class="nav-link" href="ia.html">Modo IA</a>
+        <a class="nav-link" href="forum.html">Fórum</a>
+        <a class="nav-link" href="perfil.html">Perfil</a>
+        <a class="nav-link" href="salvas.html">Salvas</a>
+      </nav>
+      <div class="sidebar-footer"><button class="nav-link as-button" type="button" data-action="theme">Tema</button><button class="nav-link as-button" type="button" data-action="logout" data-redirect="../index.html">Sair</button></div>
+    </aside>
+    <main class="content">
+      <header class="topbar">
+        <div><p class="eyebrow">Catálogo</p><h1>Profissões</h1></div>
+        <label class="search-box"><span>Pesquisar</span><input type="search" id="search" placeholder="Nome, área ou habilidade"></label>
+      </header>
+      <section class="hero-panel"><div><p class="eyebrow">Visão completa</p><h2>Explore carreiras com salário, habilidades e empregabilidade.</h2></div><div class="hero-stats"><span><strong id="total-profissoes">0</strong> profissões</span><span><strong>5</strong> áreas</span><span><strong>100%</strong> interativo</span></div></section>
+      <section class="toolbar"><button class="chip active" type="button" data-filter="todas">Todas</button><button class="chip" type="button" data-filter="Tecnologia">Tecnologia</button><button class="chip" type="button" data-filter="Saúde">Saúde</button><button class="chip" type="button" data-filter="Educação">Educação</button><button class="chip" type="button" data-filter="Serviços">Serviços</button></section>
+      <section id="lista-profissoes" class="profession-grid"></section>
+      <p id="empty-state" class="empty-state" hidden>Nenhuma profissão encontrada.</p>
+    </main>
+  </div>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/pages/home.js"></script>
+</body>
+</html>
